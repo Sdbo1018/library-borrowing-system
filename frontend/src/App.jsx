@@ -1,16 +1,13 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+﻿import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 
 // Student pages (Dave)
 import Login from './pages/student/Login';
+import StudentDashboard from './pages/student/StudentDashboard';
 
 // Must match the key Login.jsx uses in localStorage.setItem(...)
 const AUTH_TOKEN_KEY = 'authToken';
 
-// Temporary stubs — replaced by real pages in later tickets
-const StudentDashboard = () => (
-  <div style={{ padding: '20px' }}>Student Dashboard (coming in STU-FE-02)</div>
-);
-
+// Temporary stubs - replaced by real pages in later tickets
 // Library page (Hertz replaces this stub)
 const LibraryDashboard = () => <div>Library Dashboard (Hertz working on this)</div>;
 
